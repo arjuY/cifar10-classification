@@ -7,7 +7,7 @@ CIFAR-10 is a publicly available dataset. To load the dataset ‘torchvision’ 
 # Model
 The model consists of N number of Blocks connected to a classifier at the end. Each block has an MLP with K outputs and K number of convolution layers. The output of each lock is calculated by element-wise multiplication of the output of MLP and output of each convolution layer in a block. The structure of each Block is a shown below. 
 
-![Block](assests/my-image.jpg)
+![Block](assests/block_1.png)
 
 The sequence of N number of block creates the Backbone of the network. The output of the last block of this backbone is input into the Classifier which is an MLP with number of final outputs as 10.
 
